@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		144D3BAD219FD036001D4C6A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D3BAC219FD036001D4C6A /* SecondViewController.m */; };
+		144D3BB0219FD87D001D4C6A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D3BAF219FD87D001D4C6A /* Person.m */; };
 		14B125EE207A471F008013E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B125ED207A471F008013E0 /* AppDelegate.m */; };
 		14B125F1207A471F008013E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B125F0207A471F008013E0 /* ViewController.m */; };
 		14B125F4207A471F008013E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B125F2207A471F008013E0 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		144D3BAB219FD036001D4C6A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		144D3BAC219FD036001D4C6A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		144D3BAE219FD87D001D4C6A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		144D3BAF219FD87D001D4C6A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		14B125E9207A471F008013E0 /* SHPractice-Block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHPractice-Block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B125EC207A471F008013E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14B125ED207A471F008013E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 				14B125ED207A471F008013E0 /* AppDelegate.m */,
 				14B125EF207A471F008013E0 /* ViewController.h */,
 				14B125F0207A471F008013E0 /* ViewController.m */,
+				144D3BAE219FD87D001D4C6A /* Person.h */,
+				144D3BAF219FD87D001D4C6A /* Person.m */,
 				144D3BAB219FD036001D4C6A /* SecondViewController.h */,
 				144D3BAC219FD036001D4C6A /* SecondViewController.m */,
 				14B125F2207A471F008013E0 /* Main.storyboard */,
@@ -149,6 +154,7 @@
 			files = (
 				144D3BAD219FD036001D4C6A /* SecondViewController.m in Sources */,
 				14B125F1207A471F008013E0 /* ViewController.m in Sources */,
+				144D3BB0219FD87D001D4C6A /* Person.m in Sources */,
 				14B125FC207A471F008013E0 /* main.m in Sources */,
 				14B125EE207A471F008013E0 /* AppDelegate.m in Sources */,
 			);

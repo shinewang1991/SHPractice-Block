@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self demo2];
+}
+
+- (void)demo1{
     void(^testBlock)(void) = ^() {
         NSLog(@"这是个block");
     };
@@ -24,7 +30,7 @@
     testBlock();
     NSLog(@"%@",testBlock);
     /* 2018-04-08 20:49:58.032749+0800 SHPractice-Block[56145:31015946] 这是一个block
-    2018-04-08 20:49:58.032944+0800 SHPractice-Block[56145:31015946] <__NSGlobalBlock__: 0x1094c3088> */
+     2018-04-08 20:49:58.032944+0800 SHPractice-Block[56145:31015946] <__NSGlobalBlock__: 0x1094c3088> */
     
     
     int a = 5;
@@ -44,9 +50,9 @@
      */
     
     /*Block的分类:
-        NSGlobalBlock   全局
-        NSMallocBlock   堆
-        NSStackBlock  栈   ARC中没有。 栈区 -> 堆区
+     NSGlobalBlock   全局
+     NSMallocBlock   堆
+     NSStackBlock  栈   ARC中没有。 栈区 -> 堆区
      */
     
     
@@ -64,7 +70,24 @@
      2018-11-17 12:26:05.385939+0800 SHPractice-Block[3315:7709348] block之后0x604000230258
      2018-11-17 12:26:05.386022+0800 SHPractice-Block[3315:7709348] block中0x604000230258
      */
+}
+
+- (void)demo2{
+    Person *person1 = [[Person alloc] init];
+    Person *person2 = [[Person alloc] init];
+    [person1 blockOperation];
+    [person2 blockOperation];
     
+    /*
+     log:
+     self----------<Person: 0x600000016c60>
+     testBlock------------<__NSGlobalBlock__: 0x103139288>
+     self----------<Person: 0x6000000164a0>
+     testBlock------------<__NSGlobalBlock__: 0x103139288>
+     
+     可以看出。虽然两个对象的地址不同。但是两次执行的block内存地址是相同的。
+     globalBlock存在于静态区，不依附于某个对象而存在，也并不为某个对象单独拥有，所有对象共享这个block,不管多个block调用这个block，这个block都会在内存中只有一份。直到进程被杀死，block才会被释放。
+     */
 }
 
 
