@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144D3BAD219FD036001D4C6A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D3BAC219FD036001D4C6A /* SecondViewController.m */; };
 		14B125EE207A471F008013E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B125ED207A471F008013E0 /* AppDelegate.m */; };
 		14B125F1207A471F008013E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B125F0207A471F008013E0 /* ViewController.m */; };
 		14B125F4207A471F008013E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B125F2207A471F008013E0 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		144D3BAB219FD036001D4C6A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		144D3BAC219FD036001D4C6A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		14B125E9207A471F008013E0 /* SHPractice-Block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHPractice-Block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B125EC207A471F008013E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14B125ED207A471F008013E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				14B125ED207A471F008013E0 /* AppDelegate.m */,
 				14B125EF207A471F008013E0 /* ViewController.h */,
 				14B125F0207A471F008013E0 /* ViewController.m */,
+				144D3BAB219FD036001D4C6A /* SecondViewController.h */,
+				144D3BAC219FD036001D4C6A /* SecondViewController.m */,
 				14B125F2207A471F008013E0 /* Main.storyboard */,
 				14B125F5207A471F008013E0 /* Assets.xcassets */,
 				14B125F7207A471F008013E0 /* LaunchScreen.storyboard */,
@@ -142,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144D3BAD219FD036001D4C6A /* SecondViewController.m in Sources */,
 				14B125F1207A471F008013E0 /* ViewController.m in Sources */,
 				14B125FC207A471F008013E0 /* main.m in Sources */,
 				14B125EE207A471F008013E0 /* AppDelegate.m in Sources */,
@@ -281,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSE3H6NFMJ;
 				INFOPLIST_FILE = "SHPractice-Block/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shine.SHPractice-Block";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSE3H6NFMJ;
 				INFOPLIST_FILE = "SHPractice-Block/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shine.SHPractice-Block";
 				PRODUCT_NAME = "$(TARGET_NAME)";

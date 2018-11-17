@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -58,6 +59,11 @@
     };
     NSLog(@"block之后%p",&b);
     testBlock3(5);
+    /*
+     2018-11-17 12:26:05.385817+0800 SHPractice-Block[3315:7709348] block之前0x7ffeee09fd70
+     2018-11-17 12:26:05.385939+0800 SHPractice-Block[3315:7709348] block之后0x604000230258
+     2018-11-17 12:26:05.386022+0800 SHPractice-Block[3315:7709348] block中0x604000230258
+     */
     
 }
 
@@ -66,5 +72,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)pushToSecondViewController:(id)sender {
+    SecondViewController *secVC = [[SecondViewController alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:secVC];
+    [self.navigationController pushViewController:secVC animated:YES];
+}
 
 @end
